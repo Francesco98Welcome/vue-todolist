@@ -18,10 +18,11 @@ const { createApp } = Vue
                 done: true
             }
         ],
-        newTodo: {
+        newAddTodo: '',
+        /* newTodo: {
             text: '',
             done: false
-        }
+        }*/
       }
     },
     methods: {
@@ -30,7 +31,12 @@ const { createApp } = Vue
             this.myTasks.splice(index, 1);         
         },
         addTodo() {
-            this.myTasks.push(this.newTodo)
-        }
+            newTask = {
+                text: this.newAddTodo,
+                done: false
+            },
+            this.myTasks.push(newTask);
+            newAddTodo = '';
+        },
     }
 }).mount('#app')
