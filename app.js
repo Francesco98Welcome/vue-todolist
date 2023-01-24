@@ -26,17 +26,17 @@ const { createApp } = Vue
       }
     },
     methods: {
-        removeTodo(index) {
+        removeToDo(index) {
             console.log('ciao');
             this.myTasks.splice(index, 1);         
         },
-        addTodo() {
+        addToDo() {
             newTask = {
-                text: this.newAddTodo,
+                text: this.newAddToDo,
                 done: false
             },
             this.myTasks.push(newTask);
-            newAddTodo = '';
+            newAddToDo = '';
         },
     }
 }).mount('#app')
