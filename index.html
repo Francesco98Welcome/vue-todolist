@@ -17,8 +17,8 @@
         </div>
 
         <div class="input_button">
-            <form action="" @submit.prevent="addTodo">
-                <input type="text" v-model="newAddTodo" required placeholder="Nuova task">
+            <form action="" @submit.prevent="addTodo()">
+                <input type="text" v-model="newAddToDo" required placeholder="Nuova task">
                 <button>
                     New task
                 </button>

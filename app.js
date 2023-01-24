@@ -18,7 +18,7 @@ const { createApp } = Vue
                 done: true
             }
         ],
-        newAddTodo: '',
+        newAddToDo: '',
         /* newTodo: {
             text: '',
             done: false
