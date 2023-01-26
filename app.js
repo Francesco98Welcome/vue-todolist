@@ -36,7 +36,7 @@ const { createApp } = Vue
                 done: false
             },
             this.myTasks.push(newTask);
-            newAddToDo = '';
+            this.newAddToDo = '';
         },
     }
 }).mount('#app')

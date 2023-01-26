@@ -29,10 +29,10 @@
         <div class="tasks-container">
             <ul>
                 <li class="task" v-for="(task,index) in myTasks">
-                <span v-bind:class="(task.done == true) ? 'done' : ''">
-                    {{task.text}}
-                </span>
-                <i class="fas fa-times" @click="removeToDo(index)"></i>
+                    <span v-bind:class="(task.done == true) ? 'done' : ''">
+                        {{task.text}}
+                    </span>
+                    <i class="fas fa-times" @click="removeToDo(index)"></i>
                 </li>
             </ul>
         </div>
